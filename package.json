@@ -2,7 +2,7 @@
   "name": "portfolio-tp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://timmparsons.github.io/portfolio-tp/",
+  "homepage": "https://timmparsons.github.io/portfolio-tp",
   "dependencies": {
     "@carbon/icons-react": "^10.8.2",
     "@carbon/themes": "^10.9.3",
