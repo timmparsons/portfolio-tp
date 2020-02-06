@@ -9,16 +9,16 @@ const Pages = ({ user }) => {
   return (
     <Router>
       <Switch>
-        <Route exact path={process.env.PUBLIC_URL + '/'}>
+        <Route exact path="/">
           <Me user={user} />
         </Route>
-        <Route path={process.env.PUBLIC_URL + "/projects" }>
+        <Route path="/projects">
           <Projects user={user} />
         </Route>
-        <Route path={process.env.PUBLIC_URL + "/work"}>
+        <Route path="/work">
           <Work user={user} />
         </Route>
-        <Route path={process.env.PUBLIC_URL + "/education"}>
+        <Route path="/education">
           <Education user={user} />
         </Route>
       </Switch>
