@@ -12,9 +12,9 @@ const Projects = ( { user }) => {
           {user.projects.map((project,i) => (
             <ProjectItem key={i}>
               <ProjectTitle>
-                <a href={project.githubUrl}>
-                  {project.name}
-                </a>
+              <a href={project.githubUrl} target="_blank" rel="noreferrer noopener">
+                {project.name}
+              </a>             
               </ProjectTitle>
               <p>{project.summary}</p>
               <SkillContainer>
