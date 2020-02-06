@@ -7,22 +7,22 @@ import Education from './Education';
 
 const Pages = ({ user }) => {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <Router>
       <Switch>
-        <Route exact path="/">
+        <Route exact path={process.env.PUBLIC_URL + '/'}>
           <Me user={user} />
         </Route>
-        <Route path="/projects">
+        <Route path={process.env.PUBLIC_URL + "/projects" }>
           <Projects user={user} />
         </Route>
-        <Route path="/work">
+        <Route path={process.env.PUBLIC_URL + "/work"}>
           <Work user={user} />
         </Route>
-        <Route path="/education">
+        <Route path={process.env.PUBLIC_URL + "/education"}>
           <Education user={user} />
         </Route>
       </Switch>
-    </HashRouter>
+    </Router>
   );
 };
 
