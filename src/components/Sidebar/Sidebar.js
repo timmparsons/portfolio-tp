@@ -15,7 +15,7 @@ const Sidebar = () => {
   const location = useLocation();
 
   return(
-    <StyledSideNav isFixedNav expanded isChildOfHEader={false} aria-label="Side navigation">
+    <StyledSideNav isFixedNav expanded isChildOfHeader={false} aria-label="Side navigation">
       <SideNavItems>
         {items.map(i => (
           <SideNavLink
